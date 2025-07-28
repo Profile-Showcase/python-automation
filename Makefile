@@ -9,14 +9,17 @@ help:
 install:
 	pip install -e ".[dev]"
 
+## Run all checks (lint, format, test).
+all: lint format test
+
 ## Run ruff linter
 lint:
-	ruff src tests
+	ruff check src tests
 
-## Format code with black + isort.
+## Format code with ruff (isort and black replacement).
 format:
-	isort src tests
-	black src tests
+	ruff format src tests
+	ruff check --select I --fix src tests
 
 # Run the unit test suite with coverage
 test:

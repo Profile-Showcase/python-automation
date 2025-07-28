@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: project
+Version: 0.1.1
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black>=24.4.0; extra == "dev"
+Requires-Dist: isort>=5.13.2; extra == "dev"
+Requires-Dist: ruff>=0.4.5; extra == "dev"
+Requires-Dist: pytest>=8.2.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.7.0; extra == "dev"
+Dynamic: license-file
